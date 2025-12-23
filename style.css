@@ -1,0 +1,219 @@
+ * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: 'Arial',sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        background: #5BF527;
+        padding: 20px;
+      }
+
+      .container {
+        width: 100%;
+        max-width: 1200px;
+      }
+
+      h1 {
+        font-size: 36px;
+        color: #000;
+        text-align: center;
+        margin-bottom: 30px;
+        font-weight: 700;
+      }
+
+      input {
+        width: 100%;
+        max-width: 600px;
+        height: 50px;
+        margin: 0 auto 30px;
+        padding: 0 20px;
+        font-size: 16px;
+        border: 2px solid #e1e8ed;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        outline: none;
+        transition: all 0.3s;
+        display: block;
+      }
+
+      input:focus {
+        border-color: #000;
+        box-shadow: 0 4px 12px rgba(102, 126, 234, 0.2);
+      }
+
+      #results {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        background: white;
+        border-radius: 15px;
+        padding: 30px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      }
+
+      #results > h2 {
+        font-size: 28px;
+        color: #333;
+        margin-bottom: 25px;
+        text-align: center;
+      }
+
+      #resultsContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 20px;
+        width: 100%;
+      }
+
+      #debounce,
+      #throttle {
+        flex: 1;
+        min-height: 300px;
+        padding: 20px;
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: #f8f9fa;
+        border: 2px solid #dee2e6;
+      }
+
+      #debounce {
+        border-color: #e17055;
+        background: #fff5f2;
+      }
+
+      #throttle {
+        border-color: #0984e3;
+        background: #f0f8ff;
+      }
+
+      #debounce h2 {
+        font-size: 22px;
+        margin-bottom: 20px;
+        color: #e17055;
+      }
+
+      #throttle h2 {
+        font-size: 22px;
+        margin-bottom: 20px;
+        color: #0984e3;
+      }
+
+      h3 {
+        font-size: 16px;
+        padding: 10px 16px;
+        margin: 5px 0;
+        background: white;
+        border-radius: 8px;
+        color: #2d3436;
+        word-break: break-word;
+        max-width: 100%;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+      }
+
+      .loading {
+        font-size: 14px;
+        color: #888;
+        font-style: italic;
+        margin: 10px 0;
+      }
+
+      @media (max-width: 768px) {
+        body {
+          padding: 15px;
+        }
+
+        h1 {
+          font-size: 28px;
+          margin-bottom: 25px;
+        }
+
+        input {
+          height: 45px;
+          font-size: 14px;
+        }
+
+        #results {
+          padding: 20px;
+        }
+
+        #results > h2 {
+          font-size: 24px;
+          margin-bottom: 20px;
+        }
+
+        #resultsContainer {
+          flex-direction: column;
+          gap: 15px;
+        }
+
+        #debounce,
+        #throttle {
+          min-height: 200px;
+          padding: 15px;
+        }
+
+        #debounce h2,
+        #throttle h2 {
+          font-size: 20px;
+          margin-bottom: 15px;
+        }
+
+        h3 {
+          font-size: 14px;
+          padding: 8px 12px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        body {
+          padding: 10px;
+        }
+
+        h1 {
+          font-size: 24px;
+          margin-bottom: 20px;
+        }
+
+        input {
+          height: 40px;
+          font-size: 13px;
+        }
+
+        #results {
+          padding: 15px;
+          border-radius: 12px;
+        }
+
+        #results > h2 {
+          font-size: 20px;
+          margin-bottom: 15px;
+        }
+
+        #debounce,
+        #throttle {
+          min-height: 150px;
+          padding: 12px;
+        }
+
+        #debounce h2,
+        #throttle h2 {
+          font-size: 18px;
+          margin-bottom: 12px;
+        }
+
+        h3 {
+          font-size: 13px;
+          padding: 6px 10px;
+        }
+      }
