@@ -1,4 +1,5 @@
-# 🛠 Task: Smart Search & Logger System (Web-based Simulation)
+# 🛠 Task: Smart Search & Logger System 
+> (Web-based Simulation)
 
 This task will cover the following concepts:
 - Promises: Simulating async operations like fetching search results using Promise
@@ -13,12 +14,17 @@ Build a simple simulated search feature that imitates querying a database and lo
 ## 🖥️ Sample Output (in console and browser)
 
 ### User types “hello”  
+```
 (INFO) - Throttled keystroke: h  
 (INFO) - Throttled keystroke: he  
 (INFO) - Throttled keystroke: hell  
 (INFO) - Throttled keystroke: hello  
 (INFO) - Debounced search triggered  
+```
 
 ### After 1 second delay  
 Browser displays:  
-Results: HELLO, RESULT1, RESULT2
+Results: 
+```
+HELLO, RESULT1, RESULT2
+```
